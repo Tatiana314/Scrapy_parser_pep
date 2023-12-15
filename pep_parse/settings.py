@@ -3,7 +3,6 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 RESULTS = 'results'
-#(BASE_DIR / RESULTS).mkdir(exist_ok=True)
 
 BOT_NAME = 'pep_parse'
 
