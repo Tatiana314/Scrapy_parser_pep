@@ -1,11 +1,13 @@
 import csv
 from collections import defaultdict
 from datetime import datetime
+from os import path
 
 from pep_parse.settings import BASE_DIR, RESULTS
 
 
 FILE_NAME = 'status_summary_{}.csv'
+(BASE_DIR / RESULTS).mkdir(exist_ok=True)
 
 
 class PepParsePipeline:
