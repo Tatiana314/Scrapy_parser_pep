@@ -8,9 +8,8 @@ FILE_NAME = 'status_summary_{}.csv'
 
 
 class PepParsePipeline:
-    def create_results_folder(self):
-        if not (BASE_DIR / RESULTS).exists():
-            (BASE_DIR / RESULTS).mkdir()
+    def __init__(self):
+        (BASE_DIR / RESULTS).mkdir(exist_ok=True)
 
     def open_spider(self, spider):
         self.quantity_peps = defaultdict(int)
@@ -20,7 +19,6 @@ class PepParsePipeline:
         return item
 
     def close_spider(self, spider):
-        self.create_results_folder()
         with open(BASE_DIR / RESULTS / FILE_NAME.format(
             datetime.now().strftime("%y-%m-%d_%H-%M-%S")
         ), mode='w', encoding='utf-8') as f:
