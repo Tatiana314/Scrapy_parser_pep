@@ -5,7 +5,6 @@ from datetime import datetime
 from pep_parse.settings import BASE_DIR, RESULTS
 
 FILE_NAME = 'status_summary_{}.csv'
-(BASE_DIR / RESULTS).mkdir(exist_ok=True)
 
 
 class PepParsePipeline:
@@ -17,6 +16,7 @@ class PepParsePipeline:
         return item
 
     def close_spider(self, spider):
+        (BASE_DIR / RESULTS).mkdir(exist_ok=True)
         with open(BASE_DIR / RESULTS / FILE_NAME.format(
             datetime.now().strftime("%y-%m-%d_%H-%M-%S")
         ), mode='w', encoding='utf-8') as f:
