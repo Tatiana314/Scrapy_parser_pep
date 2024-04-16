@@ -5,7 +5,7 @@
 Файлы сохраняются в папку results, находящуюся в корне проекта.
 
 ## Технологии
-[![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue?logo=python)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.9%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue?logo=python)](https://www.python.org/)
 [![Scrapy](https://img.shields.io/badge/-Scrapy-464646?logo=Scrapy)](https://docs.scrapy.org/en/latest/)
 [![CSS](https://img.shields.io/badge/-CSS_selectors-464646?logo=CSS)](https://docs.scrapy.org/en/latest/topics/selectors.html#extensions-to-css-selectors)
 [![XPath](https://img.shields.io/badge/-XPath_selectors-464646?logo=XPath)](https://docs.scrapy.org/en/latest/topics/selectors.html#working-with-xpaths)
