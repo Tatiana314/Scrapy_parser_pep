@@ -14,7 +14,7 @@ Python3, Scrapy.
 ## Запуск проекта
 Клонировать репозиторий:
 ```
-git clone https://github.com/Tatiana314/scrapy_parser_pep.git
+git clone https://github.com/Tatiana314/Scrapy_parser_pep.git
 ```
 Создать и активировать виртуальное окружение:
 ```
